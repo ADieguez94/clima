@@ -1,0 +1,150 @@
+:root {
+  --primary: #09bde4;
+  --white: #FFF;
+  --yellow: #F5CC76;
+  --olive: #3D9970;
+  --orange: #FF851B;
+  --brown: #75655F;
+  --dark: #222;
+  --darkteal: #354052;
+  --font-color: #636b6f;
+}
+
+.back {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-size: cover;
+  font-size: 120%;
+}
+
+
+main {
+  flex: 1 0 auto;
+}
+
+/* overrides */
+.container {
+  width: 95%;
+}
+
+.brand-logo {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.input-field{
+  color: #ffffff !important;
+}
+
+.input-field label {
+  color: #ffffff !important;
+}
+
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label{
+  color: #0fb32b !important;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #0fb32b !important;
+  box-shadow: 0 1px 0 0 #0fb32b !important;
+}
+
+.input-field .prefix.active {
+  color: #0fb32b;
+}
+
+/* margins */
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* modal */
+.modal {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  margin-top: 5em;
+}
+
+
+/* cards */
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.descripcion {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.clima.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.clima.loading:after {
+  visibility: visible;
+  content: "Busca una ciudad para saber el clima...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+#pronosticos{
+  max-height: 530px !important;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.pointer{
+  cursor: pointer;
+}
